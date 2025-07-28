@@ -13,7 +13,10 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
-                        .allowedOrigins("https://surajkum7462.github.io")
+                        .allowedOrigins(
+                                "https://surajkum7462.github.io",
+                                "https://three-js-portfolio-indol.vercel.app"
+                        )
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowCredentials(true);
             }
